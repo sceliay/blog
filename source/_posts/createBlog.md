@@ -1,8 +1,8 @@
 ---
-categories: 杂记
+categories: Notes
 title: 用github+hexo搭建自己的博客
 date: 2018-12-17 16:20:06
-tags: [github,hexo,blog]
+tags: [github,hexo]
 ---
 
 整个过程主要是参考了[我是如何利用Github Pages搭建起我的博客，细数一路的坑](https://www.cnblogs.com/jackyroc/p/7681938.html)。但是在搭建的过程中，还是遇到了很多问题，所以写个笔记记录一下。

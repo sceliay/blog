@@ -1,5 +1,5 @@
 ---
-categories: EHR
+categories: Machine Learning
 title: Deep EHR Survey
 date: 2018-12-18 19:36:26
 tags: [EHR, Machine Learning, Deep Learning]
@@ -67,25 +67,25 @@ To revisit and refine broad ilness and diagnosis definitions and boundaries.
 
 # Reference
 1. Shickel B, Tighe P J, Bihorac A, et al. [Deep EHR: a survey of recent advances in deep learning techniques for electronic health record (EHR) analysis[J]](https://arxiv.org/pdf/1706.03446.pdf). IEEE journal of biomedical and health informatics, 2018, 22(5): 1589-1604.
-2. A. N. Jagannatha and H. Yu, [“Structured prediction models for RNN based sequence labeling in clinical text,”](https://arxiv.org/pdf/1608.00612.pdf) in EMNLP, 2016
-3. A. Jagannatha and H. Yu, [“Bidirectional Recurrent Neural Networks for Medical Event Detection in Electronic Health Records,”](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5119627/pdf/nihms823967.pdf) arXiv, pp. 473–482, 2016.
-4. Y. Wu, M. Jiang, J. Lei, and H. Xu, [“Named Entity Recognition in Chinese Clinical Text Using Deep Neural Network”](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4624324/pdf/nihms-708181.pdf), in Studies in Health Technology and Informatics, vol. 216, 2015, pp. 624–628
-5. J. A. Fries, [“Brundlefly at SemEval-2016 Task 12: Recurrent Neural Networks vs. Joint Inference for Clinical Temporal Information Extraction,”](http://www.aclweb.org/anthology/S16-1198) in Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval-2016), 2016, pp. 1274–1279.
-6. C. De Sa, A. Ratner, C. Re, J. Shin, F. Wang, S. Wu, and C. Zhang, [“Incremental knowledge base construction using deepdive,”](http://www.vldb.org/pvldb/vol8/p1310-shin.pdf) The VLDB Journal, pp. 1–25, 2016.
-7. X. Lv, Y. Guan, J. Yang, and J. Wu, [“Clinical Relation Extraction with Deep Learning,”](https://pdfs.semanticscholar.org/7fac/52a9b0f96fcee6972cc6ac4687068442aee8.pdf) International Journal of Hybrid Information Technology, vol. 9, no. 7, pp. 237–248, 2016
-8. Y. Liu, T. Ge, K. S. Mathews, H. Ji, D. L. Mcguinness, and C. Science, [“Exploiting Task-Oriented Resources to Learn Word Embeddings for Clinical Abbreviation Expansion,”](http://aclweb.org/anthology/W15-3810) in Proceedings of the 2015 Workshop on Biomedical Natural Language Processing (BioNLP 2015), 2015, pp. 92–97.
-9. P. Nguyen, T. Tran, N. Wickramasinghe, and S. Venkatesh, [“Deepr: A Convolutional Net for Medical Records,”](https://arxiv.org/pdf/1607.07519.pdf) arXiv, pp. 1–9, 2016.
+2. A. N. Jagannatha and H. Yu, [Structured prediction models for RNN based sequence labeling in clinical text,](https://arxiv.org/pdf/1608.00612.pdf) in EMNLP, 2016
+3. A. Jagannatha and H. Yu, [Bidirectional Recurrent Neural Networks for Medical Event Detection in Electronic Health Records](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5119627/pdf/nihms823967.pdf), arXiv, pp. 473–482, 2016.
+4. Y. Wu, M. Jiang, J. Lei, and H. Xu, [Named Entity Recognition in Chinese Clinical Text Using Deep Neural Network](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4624324/pdf/nihms-708181.pdf), in Studies in Health Technology and Informatics, vol. 216, 2015, pp. 624–628
+5. J. A. Fries, [Brundlefly at SemEval-2016 Task 12: Recurrent Neural Networks vs. Joint Inference for Clinical Temporal Information Extraction](http://www.aclweb.org/anthology/S16-1198), in Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval-2016), 2016, pp. 1274–1279.
+6. C. De Sa, A. Ratner, C. Re, J. Shin, F. Wang, S. Wu, and C. Zhang, [Incremental knowledge base construction using deepdive](http://www.vldb.org/pvldb/vol8/p1310-shin.pdf), The VLDB Journal, pp. 1–25, 2016.
+7. X. Lv, Y. Guan, J. Yang, and J. Wu, [Clinical Relation Extraction with Deep Learning](https://pdfs.semanticscholar.org/7fac/52a9b0f96fcee6972cc6ac4687068442aee8.pdf), International Journal of Hybrid Information Technology, vol. 9, no. 7, pp. 237–248, 2016
+8. Y. Liu, T. Ge, K. S. Mathews, H. Ji, D. L. Mcguinness, and C. Science, [Exploiting Task-Oriented Resources to Learn Word Embeddings for Clinical Abbreviation Expansion](http://aclweb.org/anthology/W15-3810), in Proceedings of the 2015 Workshop on Biomedical Natural Language Processing (BioNLP 2015), 2015, pp. 92–97.
+9. P. Nguyen, T. Tran, N. Wickramasinghe, and S. Venkatesh, [Deepr: A Convolutional Net for Medical Records](https://arxiv.org/pdf/1607.07519.pdf), arXiv, pp. 1–9, 2016.
 10. Y. Choi, C. Y.-I. Chiu, and D. Sontag, “Learning Low-Dimensional Representations of Medical Concepts Methods Background,” in AMIA Summit on Clinical Research Informatics, 2016, pp. 41–50.
 11. D. Ravi, C. Wong, F. Deligianni, M. Berthelot, J. A. Perez, B. Lo, and G.-Z. Yang, “Deep learning for health informatics,” IEEE Journal of Biomedical and Health Informatics, 2016.
-12. E. Choi, M. T. Bahadori, and J. Sun, [“Doctor AI: Predicting Clinical Events via Recurrent Neural Networks,” ](http://nematilab.info/bmijc/assets/170607_paper.pdf)arXiv, pp. 1–12, 2015.
-13. T. Tran, T. D. Nguyen, D. Phung, and S. Venkatesh, [“Learning vector representation of medical objects via EMR-driven nonnegative restricted Boltzmann machines (eNRBM),”](https://core.ac.uk/download/pdf/82350634.pdf) Journal of Biomedical Informatics,vol. 54, pp. 96–105, 2015.
-14. D. Ravi, C. Wong, F. Deligianni, M. Berthelot, J. A. Perez, B. Lo, and G.-Z. Yang, [“Deep learning for health informatics,” ](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7801947)IEEE Journal of Biomedical and Health Informatics, 2016.
+12. E. Choi, M. T. Bahadori, and J. Sun, [Doctor AI: Predicting Clinical Events via Recurrent Neural Networks](http://nematilab.info/bmijc/assets/170607_paper.pdf), arXiv, pp. 1–12, 2015.
+13. T. Tran, T. D. Nguyen, D. Phung, and S. Venkatesh, [Learning vector representation of medical objects via EMR-driven nonnegative restricted Boltzmann machines (eNRBM)](https://core.ac.uk/download/pdf/82350634.pdf), Journal of Biomedical Informatics,vol. 54, pp. 96–105, 2015.
+14. D. Ravi, C. Wong, F. Deligianni, M. Berthelot, J. A. Perez, B. Lo, and G.-Z. Yang, [Deep learning for health informatics](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7801947), IEEE Journal of Biomedical and Health Informatics, 2016.
 15. E. Choi, A. Schuetz, W. F. Stewart, and J. Sun, “Using recurrent neural network models for early detection of heart failure onset.” Journal of the American Medical Informatics Association : JAMIA, vol. 292, no. 3, pp. 344–350, 2016.
 16. O. Jacobson and H. Dalianis, “Applying deep learning on electronic health records in Swedish to predict healthcare-associated infections,” ACL 2016, p. 191, 2016.
 17. H. Li, X. Li, M. Ramanathan, and A. Zhang, “Identifying informative risk factors and predicting bone disease progression via deep belief networks,” Methods, vol. 69, no. 3, pp. 257–265, 2014.
 18. Y. Cheng, F. Wang, P. Zhang, H. Xu, and J. Hu, “Risk Prediction with Electronic Health Records : A Deep Learning Approach,” in SIAM International Conference on Data Mining SDM16, 2015.
-19. Z. C. Lipton, D. C. Kale, C. Elkan, and R. Wetzell, [“Learning to Diagnose with LSTM Recurrent Neural Networks,”](https://arxiv.org/pdf/1511.03677.pdf) ICLR, 2016.
-20. T. Pham, T. Tran, D. Phung, and S. Venkatesh, [“DeepCare: A Deep Dynamic Memory Model for Predictive Medicine,”](https://arxiv.org/pdf/1602.00357.pdf) arXiv, no. i, pp. 1–27, 2016.
+19. Z. C. Lipton, D. C. Kale, C. Elkan, and R. Wetzell, [Learning to Diagnose with LSTM Recurrent Neural Networks](https://arxiv.org/pdf/1511.03677.pdf), ICLR, 2016.
+20. T. Pham, T. Tran, D. Phung, and S. Venkatesh, [DeepCare: A Deep Dynamic Memory Model for Predictive Medicine](https://arxiv.org/pdf/1602.00357.pdf), arXiv, no. i, pp. 1–27, 2016.
 21.  P. Nickerson, P. Tighe, B. Shickel, and P. Rashidi, “Deep neural network architectures for forecasting analgesic response,” in Engineering in Medicine and Biology Society (EMBC), 2016 IEEE 38th Annual International Conference of the. IEEE, 2016, pp. 2966–2969.
 22. C. Esteban, O. Staeck, Y. Yang, and V. Tresp, “Predicting Clinical Events by Combining Static and Dynamic Information Using Recurrent Neural Networks,” arXiv, 2016.
-23. Z. Che, S. Purushotham, K. Cho, D. Sontag, and Y. Liu,[ “Recurrent neural networks for multivariate time series with missing values,”](https://arxiv.org/pdf/1606.01865.pdf) arXiv preprint arXiv:1606.01865, 2016.
+23. Z. Che, S. Purushotham, K. Cho, D. Sontag, and Y. Liu,[Recurrent neural networks for multivariate time series with missing values](https://arxiv.org/pdf/1606.01865.pdf), arXiv preprint arXiv:1606.01865, 2016.
