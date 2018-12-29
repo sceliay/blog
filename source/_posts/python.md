@@ -19,12 +19,12 @@ tags: Python
 - `str.split(str="", num=string.count(str))`
    - 通过指定分隔符对字符串进行切片，如果参数 num 有指定值，则分隔 num+1 个子字符串
 
- 4. 字符串的拼接：
- - 用%拼接：
+4. 字符串的拼接：
+- 用%拼接：
     - `str = 'There are %s, %s, %s on the table.' % (fruit1,fruit2,fruit3)`
     - `str = 'There are %(fruit1)s,%(fruit2)s,%(fruit3)s on the table' % {'fruit1':fruit1,'fruit2':fruit2,'fruit3':fruit3} `
     - `%s` str, `%d` int, `%f` float, `%.2f` 两位小数float, `%8s` 8位占位符，`%-8s` 左对齐 
- - 用join()拼接：
+- 用join()拼接：
     ```
     temp = ['There are ',fruit1,',',fruit2,',',fruit3,' on the table']
     ''.join(temp)
