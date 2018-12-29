@@ -29,7 +29,7 @@ tags: Python
     temp = ['There are ',fruit1,',',fruit2,',',fruit3,' on the table']
     ''.join(temp)
     ```
- - 用format()拼接：
+- 用format()拼接：
     ```
     str = 'There are {2}, {1}, {0} on the table'
     str.format(fruit1,fruit2,fruit3) #fruit1出现在0的位置
