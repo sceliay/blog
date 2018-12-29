@@ -5,6 +5,7 @@ date: 2018-12-19 18:43:23
 tags: [Theano, Machine Learning, Deep Learning]
 ---
 
+在看[GRAM](https://github.com/mp2893/gram)源码，记录一下Theano的语法。参考：[Theano教程系列](https://morvanzhou.github.io/tutorials/machine-learning/theano/)，[Theano API documentation](http://deeplearning.net/software/theano/library/tensor/index.html)
 
 1. 加载theano和numpy模块，并创建`function`:
 ```
