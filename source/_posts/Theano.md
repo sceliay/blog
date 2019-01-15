@@ -5,7 +5,7 @@ date: 2018-12-19 18:43:23
 tags: [Theano, Machine Learning, Deep Learning]
 ---
 
-在看[GRAM](https://github.com/mp2893/gram)源码，记录一下Theano的语法。参考：[Theano教程系列](https://morvanzhou.github.io/tutorials/machine-learning/theano/)，[Theano API documentation](http://deeplearning.net/software/theano/library/tensor/index.html)
+在看[GRAM](https://github.com/mp2893/gram)源码，记录一下Theano的语法。参考：[Theano教程系列](https://morvanzhou.github.io/tutorials/machine-learning/theano/)，[Theano API documentation](http://deeplearning.net/software/theano/library/tensor/index.html), [Theano教程](https://www.cnblogs.com/shouhuxianjian/category/699462.html)
 
 1. 加载theano和numpy模块，并创建`function`:
 ```
@@ -167,6 +167,17 @@ class Layer(object):
         else:
             self.outputs = self.activation_function(self.Wx_plus_b)
 ```
+
+- 数据类型
+x=T.scalar('myvar',dtype=theano.config.floatX)#创建0维阵列
+x=T.vector('myvar',dtype=theano.config.floatX)#创建以为阵列
+x=T.row('myvar',dtype=theano.config.floatX)#创建二维阵列,行数为1
+x=T.col('myvar',dtype=theano.config.floatX)#创建二维阵列,列数为1
+x=T.matrix('myvar',dtype=theano.config.floatX)#创建二维矩阵
+x=T.tensor3('myvar',dtype=theano.config.floatX)#创建三维张量
+x=T.tensor4('myvar',dtype=theano.config.floatX)#创建四维张量
+x=T.tensor5('myvar',dtype=theano.config.floatX)#创建五维张量
+x.ndim#输出维度看看
 
 
 
