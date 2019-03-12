@@ -120,3 +120,23 @@ str=[0,1,2,3,4,5,6]
 del str
 str         #删除后，找不到对象
 ```
+
+10. [LabelEncoder](https://blog.csdn.net/quintind/article/details/79850455)
+LabelEncoder是用来对分类型特征值进行编码，即对不连续的数值或文本进行编码。其中包含以下常用方法：
+`fit(y)` ：fit可看做一本空字典，y可看作要塞到字典中的词。 
+`fit_transform(y)`：相当于先进行fit再进行transform，即把y塞到字典中去以后再进行transform得到索引值。 
+`inverse_transform(y)`：根据索引值y获得原始数据。 
+`transform(y)` ：将y转变成索引值。
+```
+>>> le = preprocessing.LabelEncoder()
+>>> le.fit(["paris", "paris", "tokyo", "amsterdam"])
+LabelEncoder()
+>>> list(le.classes_)
+['amsterdam', 'paris', 'tokyo']
+>>> le.transform(["tokyo", "tokyo", "paris"]) 
+array([2, 2, 1]...)
+>>> list(le.inverse_transform([2, 2, 1]))
+['tokyo', 'tokyo', 'paris']
+```
+
+11. [数据预处理](https://www.cnblogs.com/chaosimple/p/4153167.html)
