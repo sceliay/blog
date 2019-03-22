@@ -5,7 +5,7 @@ date: 2018-12-20 20:07:11
 tags: Python
 ---
 
-渣渣程序员记录一下python中的一些语法&函数。
+python中的一些语法&函数。
 
 1. 原数+1: `x += 1`
 
@@ -140,3 +140,16 @@ array([2, 2, 1]...)
 ```
 
 11. [数据预处理](https://www.cnblogs.com/chaosimple/p/4153167.html)
+
+12. [排列组合](https://www.cnblogs.com/aiguiling/p/8594023.html)
+- `product` 笛卡尔积　　（有放回抽样排列）
+- `permutations` 排列　　（不放回抽样排列）
+- `combinations` 组合,没有重复　　（不放回抽样组合）
+- `combinations_with_replacement` 组合,有重复　　（有放回抽样组合）
+- eg: 
+```
+import itertools
+itertools.product('ABCD', repeat = 2)
+```
+- combinations和permutations返回的是对象地址，iterators（迭代器），可以用list()转换为list
+

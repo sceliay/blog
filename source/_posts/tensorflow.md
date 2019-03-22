@@ -22,8 +22,8 @@ model.compile(optimizer='sgd', loss='mean_squared_error')
 构建了一个神经网络，含有一层隐层，一个神经元，输入为一维。
 采用‘sgd’优化及‘mean_squared_error’损失。
 
-	- [其他优化方法](https://morvanzhou.github.io/tutorials/machine-learning/ML-intro/3-06-speed-up-learning/): Momentum, AdaGrad, RMSProp, Adam
-	- [损失函数](https://keras.io/zh/losses/)
+- [其他优化方法](https://morvanzhou.github.io/tutorials/machine-learning/ML-intro/3-06-speed-up-learning/): Momentum, AdaGrad, RMSProp, Adam
+- [损失函数](https://keras.io/zh/losses/)
 
 - Providing the Data
 ```
