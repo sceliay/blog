@@ -7,7 +7,7 @@ tags: [pandas, python]
 一些pandas的语法
 
 1. 读取与存储
-`read_csv`, `to_csv`, ·read_pickle`,`to_pickle`
+`read_csv`, `to_csv`, `read_pickle`,`to_pickle`
 
 2. 缺损值填充
 - `data = data.fillna('-1', )`
