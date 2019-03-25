@@ -2,7 +2,7 @@
 categories: Machine Learning
 title: Deep EHR Survey
 date: 2018-12-18 19:36:26
-tags: [EHR, Machine Learning, Deep Learning]
+tags: [EHR, Machine Learning]
 ---
 
 This post is the reading notes of paper [1], because I'd like to learn some machine learning work on EHR recently.
