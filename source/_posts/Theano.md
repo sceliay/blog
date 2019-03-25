@@ -2,7 +2,7 @@
 categories: [Machine Learning, Python]
 title: Theano
 date: 2018-12-19 18:43:23
-tags: [Theano, Machine Learning, Deep Learning]
+tags: [Theano, Machine Learning]
 ---
 
 在看[GRAM](https://github.com/mp2893/gram)源码，记录一下Theano的语法。参考：[Theano教程系列](https://morvanzhou.github.io/tutorials/machine-learning/theano/)，[Theano API documentation](http://deeplearning.net/software/theano/library/tensor/index.html), [Theano教程](https://www.cnblogs.com/shouhuxianjian/category/699462.html)
