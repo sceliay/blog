@@ -2,7 +2,7 @@
 categories: Python
 title: Pandas学习笔记
 date: 2019-03-22 17:12:44
-tags: [Pandas, Python]
+tags: [Python, Pandas]
 ---
 
 一些pandas的语法
