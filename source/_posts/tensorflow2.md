@@ -1,4 +1,5 @@
 ---
+categories: [Machine Learning, Python]
 title: Tensorflow学习笔记2
 date: 2019-03-25 19:29:23
 tags: [Tensorflow, Python, Machine Learning]
@@ -24,6 +25,6 @@ eg: `TPoint = namedtuple('TPoint', ['x', 'y'])` 创建一个TPoint类型，而�
   - 嵌入层用随机权重进行初始化，并将学习训练数据集中所有单词的嵌入。
   - `e = Embedding(input_dim=200, output_dim=32, input_length=50)`	
 - [add](https://www.tensorflow.org/api_docs/python/tf/keras/layers/add): 将两个输出加和
-- [Concatenate]
+- [Concatenate](https://www.tensorflow.org/api_docs/python/tf/keras/layers/concatenate): 链接两个张量
 
 

@@ -1,5 +1,5 @@
 ---
-categories: Machine Learning
+categories: [Machine Learning, Python]
 title: Theano
 date: 2018-12-19 18:43:23
 tags: [Theano, Machine Learning, Deep Learning]

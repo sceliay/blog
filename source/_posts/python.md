@@ -1,5 +1,5 @@
 ---
-categories: Notes
+categories: Python
 title: python
 date: 2018-12-20 20:07:11
 tags: Python

@@ -1,4 +1,5 @@
 ---
+categories: [Machine Learning, Python]
 title: Tensorflow学习笔记
 date: 2019-03-09 15:55:57
 tags: [Tensorflow, Python, Machine Learning]
