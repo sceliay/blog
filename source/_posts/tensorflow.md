@@ -1,7 +1,7 @@
 ---
 title: Tensorflow学习笔记
 date: 2019-03-09 15:55:57
-tags:
+tags: [Tensorflow, Python, Machine Learning]
 ---
 最近COURSERA上面开了[Tensorflow的课程](https://www.coursera.org/learn/introduction-tensorflow/home/welcome)，便去学习了一下。Github上面也放了[课堂笔记](https://github.com/lmoroney/dlaicourse)
 

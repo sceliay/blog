@@ -153,3 +153,19 @@ itertools.product('ABCD', repeat = 2)
 ```
 - combinations和permutations返回的是对象地址，iterators（迭代器），可以用list()转换为list
 
+13. 删除内存
+del 可以删除多个变量，del a,b,c,d
+办法：
+import gc （garbage collector）
+del a
+gc.collect()
+马上内存就释放了。
+
+14. `enumerate()` 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中。
+```
+>>>seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+>>> list(enumerate(seasons))
+[(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
+>>> list(enumerate(seasons, start=1))       # 下标从 1 开始
+[(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]
+```
