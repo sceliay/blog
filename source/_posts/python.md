@@ -169,3 +169,10 @@ gc.collect()
 >>> list(enumerate(seasons, start=1))       # 下标从 1 开始
 [(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]
 ```
+
+14. 将lst = [ [1, 2, 3], [2, 1, 3], [8, 4, 3] ]，变为[1, 2, 3, 2, 1, 3, 8, 4, 3]
+- `myList = [x for j in lst for x in j]`
+- ```
+   from itertools import chain
+   mylist = list(chain(*lst))
+  ```
