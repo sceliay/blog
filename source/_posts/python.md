@@ -176,3 +176,14 @@ gc.collect()
    from itertools import chain
    mylist = list(chain(*lst))
   ```
+
+15. [namedtuple](https://www.cnblogs.com/herbert/p/3468294.html)
+namedtuple创建一个和tuple类似的对象，而且对象拥有可以访问的属性。这对象更像带有数据属性的类，不过数据属性是只读的。
+eg: `TPoint = namedtuple('TPoint', ['x', 'y'])` 创建一个TPoint类型，而且带有属性x, y.
+
+16. [isinstance](http://www.runoob.com/python/python-func-isinstance.html)
+用来判断一个对象是否是一个已知的类型，类似 type()。
+`isinstance()` 与 `type()` 区别：
+- `type()` 不会认为子类是一种父类类型，不考虑继承关系。
+- `isinstance()` 会认为子类是一种父类类型，考虑继承关系。
+使用：`isinstance(object, classinfo)`

@@ -57,3 +57,5 @@ df['2016'].apply(convert_currency)
 - `loc`根据标签
 - `iloc`根据序列
 - `ix`混合
+
+8. [数据合并](https://blog.csdn.net/stevenkwong/article/details/52528616)
