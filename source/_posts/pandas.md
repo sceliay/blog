@@ -26,6 +26,7 @@ data.loc[nan_index,] = [[]]
 
 4. 去掉缺损值过多的行：
 `data.drop(Nan_num[Nan_num>256.index.tolist(),inplace=True)`
+drop函数默认删除行，列需要加`axis = 1`
 
 5. df.info()查看数据type
 

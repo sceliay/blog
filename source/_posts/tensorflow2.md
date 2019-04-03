@@ -149,5 +149,58 @@ model.fit(...)
 - [add](https://www.tensorflow.org/api_docs/python/tf/keras/layers/add): 将两个输出加和
 - [Concatenate](https://www.tensorflow.org/api_docs/python/tf/keras/layers/concatenate): 链接两个张量
 - [dot](https://www.programcreek.com/python/example/89694/keras.layers.dot)
- 
+
+6. 自定义layser
+可以通过编写`tf.keras.layers.Layer`的子类来创建一个自定义`layer`，该子类编写过程中需要编写下面的方法：
+- `build`：创建层的参数。通过`add_weight`来添加权值
+- `call`：定义前向传播过程。
+- `compute_output_shape`：指定怎么根据输入去计算`layer`的输出`shape`。
+- layer可以通过`get_config`方法和`from_config`方法实现串行。
+```
+class MyLayer(keras.layers.Layer):
+
+  def __init__(self, output_dim, **kwargs):
+    self.output_dim = output_dim
+    super(MyLayer, self).__init__(**kwargs)
+
+  def build(self, input_shape):
+    shape = tf.TensorShape((input_shape[1], self.output_dim))
+    # Create a trainable weight variable for this layer.
+    self.kernel = self.add_weight(name='kernel',
+                                  shape=shape,
+                                  initializer='uniform',
+                                  trainable=True)
+    # Be sure to call this at the end
+    super(MyLayer, self).build(input_shape)
+
+  def call(self, inputs):
+    return tf.matmul(inputs, self.kernel)
+
+  def compute_output_shape(self, input_shape):
+    shape = tf.TensorShape(input_shape).as_list()
+    shape[-1] = self.output_dim
+    return tf.TensorShape(shape)
+
+  def get_config(self):
+    base_config = super(MyLayer, self).get_config()
+    base_config['output_dim'] = self.output_dim
+
+  @classmethod
+  def from_config(cls, config):
+    return cls(**config)
+
+
+# Create a model using the custom layer
+model = keras.Sequential([MyLayer(10),
+                          keras.layers.Activation('softmax')])
+
+# The compile step specifies the training configuration
+model.compile(optimizer=tf.train.RMSPropOptimizer(0.001),
+              loss='categorical_crossentropy',
+              metrics=['accuracy'])
+
+# Trains for 5 epochs.
+model.fit(data, targets, batch_size=32, epochs=5)
+```
+
 
