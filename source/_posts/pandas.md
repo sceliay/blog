@@ -59,4 +59,8 @@ df['2016'].apply(convert_currency)
 - `iloc`根据序列
 - `ix`混合
 
-8. [数据合并](https://blog.csdn.net/stevenkwong/article/details/52528616)
+8. [数据合并](https://blog.csdn.net/stevenkwong/article/details/52528616
+
+9. [统计个数](https://blog.csdn.net/waple_0820/article/details/80514073)
+- `df.groupby(['id'],as_index=False)['id'].agg({'cnt':'count'})`
+- `df['id'].value_counts()`
