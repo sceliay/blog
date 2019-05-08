@@ -64,3 +64,8 @@ df['2016'].apply(convert_currency)
 9. [统计个数](https://blog.csdn.net/waple_0820/article/details/80514073)
 - `df.groupby(['id'],as_index=False)['id'].agg({'cnt':'count'})`
 - `df['id'].value_counts()`
+
+10. datetime
+- `pd.to_datetime(df)`：将str转换为datetime
+- `df.dt.year`: 获得datetime数据中的year
+- `df.map(lambda x:x.strftime('%Y'))`
