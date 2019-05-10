@@ -5,7 +5,7 @@ date: 2019-03-22 17:12:44
 tags: [Python, Pandas]
 ---
 
-一些pandas的语法
+记录一些pandas的语法
 [官方文档](http://pandas.pydata.org/pandas-docs/stable/getting_started/comparison/comparison_with_sql.html), [pandas vs. SQL](http://pandas.pydata.org/pandas-docs/stable/getting_started/comparison/comparison_with_sql.html), [教程](https://www.cnblogs.com/en-heng/p/5630849.html)
 
 
@@ -69,3 +69,5 @@ df['2016'].apply(convert_currency)
 - `pd.to_datetime(df)`：将str转换为datetime
 - `df.dt.year`: 获得datetime数据中的year
 - `df.map(lambda x:x.strftime('%Y'))`
+
+11. [对行和列的操作](https://blog.csdn.net/xiaodongxiexie/article/details/53108959)
