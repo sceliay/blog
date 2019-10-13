@@ -71,3 +71,5 @@ df['2016'].apply(convert_currency)
 - `df.map(lambda x:x.strftime('%Y'))`
 
 11. [对行和列的操作](https://blog.csdn.net/xiaodongxiexie/article/details/53108959)
+
+12. [去掉含nan的行/列](https://amberwest.github.io/2019/03/05/%E5%88%A0%E9%99%A4DataFrame%E4%B8%AD%E6%9F%90%E5%88%97%E5%80%BC%E4%B8%BANaN%E7%9A%84%E8%AE%B0%E5%BD%95-%E8%A1%8C/)
