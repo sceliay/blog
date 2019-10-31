@@ -90,3 +90,11 @@ $$ UCIQE = c_1\*\sigma_c+c_x\*con_1+c_3\*\mu_s $$
 - XGBOOST：文本特征
 
 6. MOVIE（MOtion-based Video IntegrityEvalution）：计算视频中物体的运动矢量，联合时域和空域的失真信息，最终得到一个符合主观感受的失真评价分数。
+
+7. RankIQA: [gitbug](https://xialeiliu.github.io/RankIQA/), [综述](https://zhuanlan.zhihu.com/p/32553977)
+
+8. VMAF: [github](https://github.com/Netflix/vmaf), [介绍](https://www.infoq.cn/article/a-quality-assessment-tool-for-video-streaming-media), [使用](https://www.jianshu.com/p/b97e4d15a400)
+
+9. GMAD: [page](https://ece.uwaterloo.ca/~k29ma/websites/gMAD/)
+
+10. 基于opencv的质量评估: [github](https://github.com/Leezhen2014/python--/blob/master/BlurDetection.py), [介绍](https://cloud.tencent.com/developer/article/1395727)
