@@ -1,6 +1,6 @@
 ---
 categories: Python
-title: python
+title: Python
 date: 2018-12-20 20:07:11
 tags: Python
 ---
