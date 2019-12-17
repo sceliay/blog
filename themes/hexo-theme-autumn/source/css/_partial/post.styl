@@ -17,7 +17,14 @@
     transform: translate(-50%, -18px)
   
   .post-cat
+    display: inline-block
     margin: 0 0 5px
+    &:first-of-type::after
+      content: "\00B7"
+      margin: 0 .75em
+      color: #f78769
+    &:last-of-type::after 
+      content: ''
     a
       font: 700 13px Lato-Bold
       color: #f78769
@@ -72,8 +79,8 @@
   .post-content
     position: relative
     color: #777
-    font-size: 1rem
-    line-height: 1.6
+    font-size: 15px
+    line-height: 1.2
     margin-bottom: 1.5em
     text-align: left
     a.more-link
@@ -91,11 +98,6 @@
       transition: .5s
       &:hover
         box-shadow: none
-    table
-      font-size:14px
-      line-height:1.2
-      margin: -1.2em -3em
     img
       max-width: 100%
       border-radius: 4px
-

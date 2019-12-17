@@ -1,17 +1,19 @@
 ---
 categories: Machine Learning
-title: Pytorch 时序
+title: Pytorch 序列
 date: 2019-12-17 19:02:52
 tags: [Machine Learning, Python, Pytorch]
 ---
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 参考：[code of learn deep learning with pytroch](https://github.com/L1aoXingyu/code-of-learn-deep-learning-with-pytorch/blob/master/chapter2_PyTorch-Basics/PyTorch-introduction.ipynb)
 
 # 循环神经网络
 ## RNN
-$$ h_t = tanh(w_{ih}\*x_t+b_{ih}+w_{hh}\*h_{t-1}+b_{hh}) $$	
+$$ h_t = tanh(w_{ih}*x_t+b_{ih}+w_{hh}*h_{t-1}+b_{hh}) $$	
 
 1. `torch.nn.RNNCell()` 只接受序列中单步的输入，且必须传入隐藏状态
 	- `input_size`: 输入的特征维度
@@ -69,9 +71,9 @@ out, h_t = rnn_seq(x, h_0)
 $$ f_t = \sigma (W_f \cdot [h_{t-1},x_t]+b_f) $$
 $$ i_t = \sigma (W_i \cdot [h_{t-1},x_t]+b_i) $$
 $$ \tilde{C_t} = tanh (W_C \cdot [h_{t-1},x_t]+b_C) $$
-$$ C_t = f_t\*C_{t-1}+i_t \*\tilde{C_t} $$
+$$ C_t = f_t*C_{t-1}+i_t *\tilde{C_t} $$
 $$ o_t = \sigma(w_o \cdot [h_{t-1},x_t]+b_o) $$
-$$ h_t = o_t\*tanh(C_t) $$
+$$ h_t = o_t*tanh(C_t) $$
 LSTM 与基本 RNN 一样，参数也相同，具有`nn.LSTMCell()`和`nn.LSTM()`两种形式。
 ```
 lstm_seq = nn.LSTM(50, 100, num_layers=2) # 输入维度 50，输出 100，两层
@@ -92,8 +94,8 @@ out, (h, c) = lstm_seq(lstm_input, (h_init, c_init))
 ## GRU
 $$ z_t = \sigma (W_z \cdot [h_{t-1},x_t]) $$
 $$ r_t = \sigma (W_r \cdot [h_{t-1},x_t]) $$
-$$ \tilde{h_t} = tanh(W \cdot [r_t \* h_{t-1}, x_t]) $$
-$$ h_t = (1-z_t)\*h_{t-1}+z_t \* \tilde{h_t} $$
+$$ \tilde{h_t} = tanh(W \cdot [r_t * h_{t-1}, x_t]) $$
+$$ h_t = (1-z_t)*h_{t-1}+z_t*\tilde{h_t} $$
 ```
 gru_seq = nn.GRU(10, 20)
 gru_input = Variable(torch.randn(3, 32, 10))

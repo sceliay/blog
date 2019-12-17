@@ -4,7 +4,6 @@ title: Pytorch 基本概念
 date: 2019-12-09 15:08:03
 tags: [Machine Learning, Python, Pytorch]
 ---
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 参考：[code of learn deep learning with pytroch](https://github.com/L1aoXingyu/code-of-learn-deep-learning-with-pytorch/blob/master/chapter2_PyTorch-Basics/PyTorch-introduction.ipynb)
 

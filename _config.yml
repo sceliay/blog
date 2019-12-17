@@ -82,3 +82,10 @@ deploy:
   repo: git@github.com:sceliay/sceliay.github.io.git  #这里的网址填你自己的
   branch: master   
 
+# math
+math:
+  engine: 'mathjax' # or 'katex'
+  mathjax:
+    # src: custom_mathjax_source
+    config:
+      # MathJax config
