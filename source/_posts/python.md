@@ -187,3 +187,43 @@ eg: `TPoint = namedtuple('TPoint', ['x', 'y'])` 创建一个TPoint类型，而�
 - `type()` 不会认为子类是一种父类类型，不考虑继承关系。
 - `isinstance()` 会认为子类是一种父类类型，考虑继承关系。
 使用：`isinstance(object, classinfo)`
+
+17. `lambda`,`map`, `filter`, `reduce`
+```
+# lambda
+square = lambda number: number*number
+
+# map
+def inefficientSquare(number):
+  result = number*number
+  return result
+map(inefficientSquare,my_list)
+
+# map, filter, reduce
+number = [1,2,3,4,5,6]
+odd_numbers = []
+squared_odd_numbers = []
+total = 0
+
+# filter for odd numbers:
+for number in numbers:
+  if number%2 == 1:
+    odd_numbers.append(number)
+
+odd_numbers = filter(lambda n:n%2==1,numbers)
+
+# square all odd numbers:
+for number in odd_numbers:
+  squared_odd_numbers.append(number*number)
+
+squared_odd_numbers = map(lambda n:n*n,odd_numbers)
+
+# calculate total
+for number in squared_odd_numbers:
+  total += number
+
+total = reduce(lambda acc, n: acc+n, suqared_odd_numbers)
+```
+
+18. [判断实列类型](https://blog.51cto.com/alsww/1787848)
+`isinstance(x,int)`

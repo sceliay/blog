@@ -59,7 +59,7 @@ df['2016'].apply(convert_currency)
 - `iloc`根据序列
 - `ix`混合
 
-8. [数据合并](https://blog.csdn.net/stevenkwong/article/details/52528616
+8. [数据合并](https://blog.csdn.net/stevenkwong/article/details/52528616)
 
 9. [统计个数](https://blog.csdn.net/waple_0820/article/details/80514073)
 - `df.groupby(['id'],as_index=False)['id'].agg({'cnt':'count'})`
@@ -73,3 +73,8 @@ df['2016'].apply(convert_currency)
 11. [对行和列的操作](https://blog.csdn.net/xiaodongxiexie/article/details/53108959)
 
 12. [去掉含nan的行/列](https://amberwest.github.io/2019/03/05/%E5%88%A0%E9%99%A4DataFrame%E4%B8%AD%E6%9F%90%E5%88%97%E5%80%BC%E4%B8%BANaN%E7%9A%84%E8%AE%B0%E5%BD%95-%E8%A1%8C/)
+
+13. 删去重复列
+`DataFrame.drop_duplicates(subset=None, keep='first', inplace=False)`
+- `subset`: 指定特定的列，默认全部
+- `keep: {‘first’, ‘last’, False}, default ‘first’`: 删除重复项，并保留，默认第一次出现的

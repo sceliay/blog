@@ -5,7 +5,7 @@ date: 2019-12-09 15:08:03
 tags: [Machine Learning, Python, Pytorch]
 ---
 
-参考：[code of learn deep learning with pytroch](https://github.com/L1aoXingyu/code-of-learn-deep-learning-with-pytorch/blob/master/chapter2_PyTorch-Basics/PyTorch-introduction.ipynb)
+参考：[code of learn deep learning with pytroch](https://github.com/L1aoXingyu/code-of-learn-deep-learning-with-pytorch/blob/master/chapter2_PyTorch-Basics/PyTorch-introduction.ipynb)，[PyTorch中文文档](https://pytorch-cn.readthedocs.io/zh/latest/notes/autograd/)
 
 # 安装
 conda: `conda install pytorch torchvision -c pytorch`

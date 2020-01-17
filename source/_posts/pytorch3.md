@@ -68,12 +68,12 @@ out, h_t = rnn_seq(x, h_0)
 输出的结果均为 (seq, batch, feature)
 
 ## LSTM
-$$ f_t = \sigma (W_f \cdot [h_{t-1},x_t]+b_f) $$
-$$ i_t = \sigma (W_i \cdot [h_{t-1},x_t]+b_i) $$
-$$ \tilde{C_t} = tanh (W_C \cdot [h_{t-1},x_t]+b_C) $$
-$$ C_t = f_t*C_{t-1}+i_t *\tilde{C_t} $$
-$$ o_t = \sigma(w_o \cdot [h_{t-1},x_t]+b_o) $$
-$$ h_t = o_t*tanh(C_t) $$
+$$ f_t = \sigma (W_f \cdot [h_{t-1},x_t]+b_f) \\
+i_t = \sigma (W_i \cdot [h_{t-1},x_t]+b_i) \\
+\tilde{C_t} = tanh (W_C \cdot [h_{t-1},x_t]+b_C) \\
+C_t = f_t*C_{t-1}+i_t *\tilde{C_t} \\
+o_t = \sigma(w_o \cdot [h_{t-1},x_t]+b_o) \\
+h_t = o_t*tanh(C_t) $$
 LSTM 与基本 RNN 一样，参数也相同，具有`nn.LSTMCell()`和`nn.LSTM()`两种形式。
 ```
 lstm_seq = nn.LSTM(50, 100, num_layers=2) # 输入维度 50，输出 100，两层
@@ -92,10 +92,10 @@ out, (h, c) = lstm_seq(lstm_input, (h_init, c_init))
 ```
 
 ## GRU
-$$ z_t = \sigma (W_z \cdot [h_{t-1},x_t]) $$
-$$ r_t = \sigma (W_r \cdot [h_{t-1},x_t]) $$
-$$ \tilde{h_t} = tanh(W \cdot [r_t * h_{t-1}, x_t]) $$
-$$ h_t = (1-z_t)*h_{t-1}+z_t*\tilde{h_t} $$
+$$ z_t = \sigma (W_z \cdot [h_{t-1},x_t]) \\
+r_t = \sigma (W_r \cdot [h_{t-1},x_t]) \\
+\tilde{h_t} = tanh(W \cdot [r_t * h_{t-1}, x_t]) \\
+h_t = (1-z_t)*h_{t-1}+z_t*\tilde{h_t} $$
 ```
 gru_seq = nn.GRU(10, 20)
 gru_input = Variable(torch.randn(3, 32, 10))
@@ -341,8 +341,6 @@ def make_sequence(x, dic): # 字符编码
     idx = [dic[i.lower()] for i in x]
     idx = torch.LongTensor(idx)
     return idx
-
-make_sequence('apple', char_to_idx)
 
 # 构建单个字符的 lstm 模型
 class char_lstm(nn.Module):
