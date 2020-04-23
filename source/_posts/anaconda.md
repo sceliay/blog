@@ -8,6 +8,8 @@ tags: [Anaconda,tmux]
 记录一些服务器上常用命令。
 
 # Anaconda
+- 添加环境
+`export PATH="/home/ry/anaconda3/bin:$PATH"`
 - Python 3 与 Python 2 环境转换
 1. 创建环境
 `conda create -n python27 python=2.7 anaconda`
@@ -25,6 +27,8 @@ tags: [Anaconda,tmux]
 `conda env create -f environment.yaml`
 
 # Tmux
+0. 安装
+`sudo apt install tmux`
 1. 创建会话
 `tmux new -s name`
 2. 分离会话，退出当前tmux窗口，使之在后台运行

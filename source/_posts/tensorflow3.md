@@ -12,3 +12,5 @@ x = tf.constant(1)
 with tf.Session() as sess:
     print sess.run(x)
 ```
+
+2. 

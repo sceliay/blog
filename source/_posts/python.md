@@ -37,7 +37,7 @@ python中的一些语法&函数。
     ```
     str = 'There are {fruit1}, {fruit2}, {fruit3} on the table'
 	  str.format(fruit1=fruit1,fruit2=fruit2,fruit3=fruit3)
-	 ```
+    ```
 
 5. 遍历list：
 ```
