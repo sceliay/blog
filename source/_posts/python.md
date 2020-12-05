@@ -41,10 +41,18 @@ python中的一些语法&函数。
 
 5. 遍历list：
 ```
-from collections import Counter
-Counter([1,2,2,2,2,3,3,3,4,4,4,4])
+from collections import Counter, OrderedDict
+x = Counter([1,2,2,2,2,3,3,3,4,4,4,4])
 
 # Counter({2: 4, 4: 4, 3: 3, 1: 1})
+
+sorted(x.items())
+x.most_common()
+x.most_common(1)
+sorted(x, key=x.get, reverse=True)
+sorted(x.items(), key=lambda pair: pair[1], reverse=True)
+
+y = OrderedDict(x.most_common())
 ```
 
 6. numpy.random.uniform(low,high,size): [参考](https://blog.csdn.net/u013920434/article/details/52507173)
@@ -64,7 +72,7 @@ a = [1,2,3]
 b = [4,5,6]
 c = [4,5,6,7,8]
 zipped = zip(a,b)     # 打包为元组的列表
-# [(1, 4), (2, 5), (3, 6)]
+# list(zipped) : [(1, 4), (2, 5), (3, 6)]
 zip(a,c)              # 元素个数与最短的列表一致
 # [(1, 4), (2, 5), (3, 6)]
 zip(*zipped)          # 与 zip 相反，*zipped 可理解为解压，返回二维矩阵式
@@ -225,5 +233,92 @@ for number in squared_odd_numbers:
 total = reduce(lambda acc, n: acc+n, suqared_odd_numbers)
 ```
 
-18. [判断实列类型](https://blog.51cto.com/alsww/1787848)
-`isinstance(x,int)`
+18. 加载文件
+```
+for file in os.listdir('/fold'):
+    filename = os.path.join(domain, file)
+    data = np.load(filename)
+```
+
+19. [加载图片](https://www.geeksforgeeks.org/reading-images-in-python/)
+- opencv
+```
+
+brightness_4
+# Python program to read image using OpenCV 
+  
+# importing OpenCV(cv2) module 
+import cv2 
+  
+# Save image in set directory 
+# Read RGB image 
+img = cv2.imread('g4g.png')  
+  
+# Output img with window name as 'image' 
+cv2.imshow('image', img)  
+  
+# Maintain output window utill 
+# user presses a key 
+cv2.waitKey(0)         
+  
+# Destroying present windows on screen 
+cv2.destroyAllWindows()  
+```
+- matplot
+```
+# Python program to read  
+# image using matplotlib 
+  
+# importing matplotlib modules 
+import matplotlib.image as mpimg 
+import matplotlib.pyplot as plt 
+  
+# Read Images 
+img = mpimg.imread('g4g.png') 
+  
+# Output Images 
+plt.imshow(img) 
+```
+
+- pil
+```
+# Python program to read 
+# image using PIL module 
+  
+# importing PIL 
+from PIL import Image 
+  
+# Read image 
+img = Image.open('g4g.png') 
+  
+# Output Images 
+img.show() 
+  
+# prints format of image 
+print(img.format) 
+  
+# prints mode of image 
+print(img.mode) 
+```
+
+- 加载多张图片
+```
+plt.figure(figsize=(50,50))
+
+for i in range(len(files)):
+    face = files[i]
+    filename = './Faces128/eface_%s.png' %face
+    img = mpimg.imread(filename) 
+    plt.subplot(10,1,i+1)
+    plt.imshow(img) 
+    plt.title(ranks[i])
+```
+
+- 保存
+`numpy.save(file, arr, allow_pickle=True, fix_imports=True)`
+
+- 张量扩充
+`np.tile(a,[5,1])`
+
+- 矩阵上三角
+`at = np.triu(am, 0)`

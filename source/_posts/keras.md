@@ -254,3 +254,16 @@ model.fit({'main_input': headline_data, 'aux_input': additional_data},
           {'main_output': labels, 'aux_output': labels},
           epochs=50, batch_size=32)
 ```
+
+8. [tokenizer与embedding](https://zhuanlan.zhihu.com/p/65192903)
+
+9. GELU
+```
+from keras.layers import Activation
+from keras.utils.generic_utils import get_custom_objects
+
+def custom_gelu(x):
+    return 0.5 * x * (1 + tf.tanh(tf.sqrt(2 / np.pi) * (x + 0.044715 * tf.pow(x, 3))))
+get_custom_objects().update({'custom_gelu': Activation(custom_gelu)})
+fit1.add(Dense(output_dim=1, activation=custom_gelu))
+```
